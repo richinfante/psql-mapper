@@ -1,0 +1,25 @@
+{
+  "name": "psql-mapper",
+  "version": "1.0.0",
+  "description": "A utility to map psql queries to library functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "psql-mapper",
+    "psql",
+    "postgres",
+    "library",
+    "module"
+  ],
+  "repository" : "https://github.com/richinfante/psql-mapper.git",
+  "author": "@richinfante",
+  "license": "MIT",
+  "dependencies": {
+    "pg": "^6.1.2"
+  },
+  "devDependencies": {
+    "colors": "^1.1.2"
+  }
+}
