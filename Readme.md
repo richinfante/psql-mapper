@@ -1,8 +1,5 @@
-# Querymapper
-querymapper is designed to allow quick and easy creation of libraries that interact with databases.
-
-
-**NOTE: this module is experimental. use at your own risk.**
+# Psql-mapper
+psql-mapper is designed to allow quick and easy creation of libraries that interact with databases. **NOTE: this module is experimental. use at your own risk!**
 
 ## Exported Methods:
 ### Prepare
@@ -32,7 +29,7 @@ query.mapMultiple(preparedQuery, options?)
 
 ## Basic Usage
 ```js
-const query = require('querymapper')
+const query = require('psql-mapper')
 
 module.exports.getItem = query.mapSingle(`
   SELECT * from items
@@ -68,7 +65,7 @@ If your project is complex, it may be beneficial to seperate queries and mapping
 In one file, let's call it `queries.js`:
 
 ```js
-const query = require('querymapper')
+const query = require('psql-mapper')
 
 /**
 * Parameters: (item_uuid)
@@ -83,7 +80,7 @@ module.exports.GET_ITEM = query.prepare(`
 In your `library.js` file:
 
 ```js
-const query = require('querymapper')
+const query = require('psql-mapper')
 const queries = require('./queries')
 
 /**
