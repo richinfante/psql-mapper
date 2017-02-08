@@ -6,7 +6,7 @@ const Error = require('./lib/error')
 const Status = require('./lib/status')
 
 // Some logging flags
-const logStatus = process.env.DEBUG_SQL != null
+const logStatus = process.env.DEBUG_SQL != '' &&  process.env.DEBUG_SQL != 'false'
 const verboseLog = process.env.DEBUG_SQL === 'all'
 
 if (logStatus || verboseLog) {
