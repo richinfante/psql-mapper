@@ -83,7 +83,7 @@ function prepare (string, params) {
  * @returns {string} - the prepared sql (comment stripped, single line.)
  */
 module.exports.load = function load (name, params) {
-  return prepare(fs.readFileSync(path.join(__dirname, name), 'utf8'), params)
+  return prepare(fs.readFileSync(name, 'utf8'), params)
 }
 
 /**

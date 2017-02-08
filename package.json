@@ -1,6 +1,6 @@
 {
   "name": "psql-mapper",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A utility to map psql queries to library functions",
   "main": "index.js",
   "scripts": {

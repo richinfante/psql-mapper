@@ -127,3 +127,5 @@ MIT Licence
 
 ## TODO
 - Tests
+
+(c) 2017 Rich Infante. All Rights Reserved.
